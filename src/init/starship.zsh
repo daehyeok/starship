@@ -19,7 +19,7 @@ else
     zmodload zsh/datetime
     zmodload zsh/mathfunc
     __starship_get_time() {
-        (( STARSHIP_CAPTURED_TIME = int(rint(EPOCHREALTIME * 1000)) ))
+        (( STARSHIP_CAPTURED_TIME = int(rint(${EPOCHREALTIME} * 1000)) ))
     }
 fi
 
